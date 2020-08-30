@@ -1,0 +1,75 @@
+<html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Scroll Event</title>
+    </head>
+
+    <body>
+
+      <div class="wrapper">
+        <div class="terms-and-conditions">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, labore!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor impedit est tempore animi nulla consequuntur consectetur ex sunt illum possimus vel vero sed alias doloremque, voluptatem voluptate necessitatibus qui deserunt. Incidunt doloribus molestias autem minus totam? Voluptate quod praesentium sunt laboriosam, expedita quo minus! Illum, sit! Blanditiis explicabo aut quia repellat aperiam deleniti corporis non cupiditate tenetur consequuntur, ex, porro excepturi numquam! Inventore eaque, labore autem, cupiditate quisquam odit sapiente harum tenetur delectus sunt numquam dolorem facere consectetur itaque architecto, hic perspiciatis pariatur nemo repellat at distinctio voluptatum dolore possimus? Impedit, autem minima. Velit eos quod possimus corporis fugit laborum impedit inventore. Tenetur error quos adipisci ipsa expedita? Iusto, facilis atque placeat sed ab nihil adipisci molestias sapiente saepe recusandae obcaecati minus eveniet vel, officiis cupiditate, laudantium reiciendis quos voluptates? Nesciunt, reprehenderit aut iure nihil atque, qui quo recusandae, dolorum repellat libero maiores fugiat distinctio ducimus animi illo dignissimos.
+           ?</p>
+          <strong class="watch">watch for me</strong>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab, ea inventore commodi eligendi error
+            repellat impedit eum quod enim sequi, distinctio, qui eaque ipsam fugit asperiores eos laboriosam ex.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa id debitis ex eligendi rem unde consequuntur
+            natus omnis vel nulla sit commodi, quos distinctio doloremque doloribus veniam quis et dolore?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quibusdam quidem et maxime iusto provident dolor cupiditate nisi pariatur deleniti obcaecati vel odio labore, modi beatae expedita neque? Laboriosam nemo molestias minus voluptatibus voluptate explicabo ipsum autem eius, fugiat vero possimus omnis ex nesciunt impedit placeat fuga ipsa suscipit reprehenderit esse aspernatur, eos ab. Quidem recusandae facilis quibusdam esse illum in nemo? Officiis ipsum reprehenderit saepe minus! Nisi eum cumque quia est vero dicta, quos ullam quas aspernatur quod, nemo mollitia maxime ex perspiciatis sapiente architecto? Omnis iure dicta accusantium blanditiis sint quia quod. Vitae quasi rem quas dolore eum?</p>
+          <hr>
+        </div>
+   
+        <button class="accept" disabled autocomplete="off">Accept</button>
+      </div>
+
+      <style>
+        body {
+          min-height: 100vh;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          font-family: cursive;
+          line-height: 2;
+          background: #08a8ad;
+        }
+
+        .wrapper {
+          width: 400px;
+          height: 80vh;
+          padding: 20px;
+          border: 2px solid black;
+          border-radius: 5px;
+          background: white;
+          display: grid;
+          grid-template-rows: 1fr auto;
+          filter: drop-shadow(10px 10px 10px black);
+        }
+
+        button {
+          background: #066e72;
+          color: white;
+          font-size: 1rem;
+          padding: 20px;
+          transition: all .3s;
+        }
+        button:hover{
+            background: #439b9e;
+        }
+
+        button[disabled] {
+          opacity: 0.1;
+          transform: translateY(200%) scale(0.5);
+        }
+
+        .terms-and-conditions {
+          overflow: scroll;
+        }
+      </style>
+      <script src="script.js"></script>
+    </body>
+
+  </html>

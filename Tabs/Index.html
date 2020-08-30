@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="tabs">
+      <div role="tablist" aria-label="Programming Languages">
+        <button role="tab" aria-selected="true" id="js">
+          JavaScript
+        </button>
+        <button role="tab" aria-selected="false" id="ruby">CSS
+        </button>
+        <button role="tab" aria-selected="false" id="php">
+          HTML
+        </button>
+      </div>
+      <div role="tabpanel" aria-labelledby="js">
+        <p>JavaScript isn't so great!</p>
+      </div>
+      <div role="tabpanel" aria-labelledby="ruby" hidden>
+        <p>CSS is Better</p>
+      </div>
+      <div role="tabpanel" aria-labelledby="php" hidden>
+        <p>HTML is cool!</p>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
